@@ -4,7 +4,7 @@ class Node
 			@value = value
 			@next_node = next_node
 		end
-	end
+end
 
 class LinkedList
 	attr_accessor: :head, :tail
@@ -21,9 +21,23 @@ class LinkedList
 		tail.inspect
 		puts"/n"
 	end
+	def append v
+		if @head.nil?
+			@head - Node.new(v)
+			@tail = @head
+		else
+			@tail.next_node = Node.new(v)
+			@tail = tail.next_node
+		end
+	end
 
-
-
+	def prepend v 
+		if @head.nil?
+			self.append(v)
+		else
+			@head = Node.new(v, @head)
+		end
+	end
 
 	
 
