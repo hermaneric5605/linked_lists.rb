@@ -133,18 +133,16 @@ end
 
 list = LinkedList.new
 
-#list.append("holola")
-#list.append("yolola")
-#list.prepend("kolola")
-#puts list.size
-#puts list.head
-#puts list.tail
-#puts list.at(1)
-#list.insert_at(1, "polola")
-#list.insert_at(1, "cholola")
-#puts list.contains?("holola")
-#puts list.contains?("lolola")
-#p list.find("polola")
-#puts list.to_s
-#list.remove_at(2)
-#puts list.to_s
+
+puts list.append("holola")
+puts list.append("yolola")
+puts list.prepend("kolola")
+puts list.size
+puts list.head
+puts list.tail
+puts list.at(1)
+puts list.contains?("holola")
+puts list.contains?("lolola")
+p list.find("polola")
+puts list.to_s
+puts list.to_s
